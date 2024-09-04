@@ -21,7 +21,7 @@ app.get("/", function (req, res) {
 
 
 // GET API with empty date parameter returning the current time 
-app.get("/timestamp/api/", function (req, res) {
+app.get("/api", function (req, res) {
   const currentDate = new Date()
   const unix = Date.parse(currentDate)
   res.json({unix, utc: currentDate.toUTCString()});
@@ -29,7 +29,7 @@ app.get("/timestamp/api/", function (req, res) {
 
 
 //GET API with valid date parameter
-app.get("/timestamp/api/:dateParam", (req, res) =>{
+app.get("/api/:dateParam", (req, res) =>{
   const dateParam = req.params.dateParam
   console.log(isDateValid(dateParam))
 
