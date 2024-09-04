@@ -1,4 +1,4 @@
-# Timestamp Microservice
+# Timestamp Microservice Tests
 
 # Waiting: A request to /api/:date? with a valid date should return a JSON object with a unix key that is a Unix timestamp of the input date in milliseconds (as type Number)
 
